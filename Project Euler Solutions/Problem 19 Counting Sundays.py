@@ -31,8 +31,7 @@ a boolean value.
 def leap_year(x):
     return x%4==0 and x%100!=0 or x%400==0
 '''
-#Second, I create three dictionaries. dict1 for a regular year;dict2 for a 
-leap year and dict3 for a week.
+#Second, I create three dictionaries. dict1 for a regular year;dict2 for a leap year and dict3 for a week.
 
 dict1={0:0,1:31,2:28,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31}
 dict2={0:0,1:31,2:29,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31}
@@ -66,8 +65,7 @@ def weekday_check(year,month,date):
     days=days+date
     return dict3[days%7]
 
-#Lastly, use a nested loop to find out how many Sundays fell on the first 
-of the month between Jan 1 1901 to Dec 31 2000 
+#Lastly, use a nested loop to find out how many Sundays fell on the first of the month between Jan 1 1901 to Dec 31 2000 
 
 Sundays=0
 for x in range(1901,2001):
