@@ -5,11 +5,6 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 '''
 # Solution: 906609 = 913*933  
 
-
-
-
-
-
 def largest_pali_num():
 # First, I create a empty dictionary pali_num 
     pali_num={}
@@ -24,5 +19,5 @@ def largest_pali_num():
 # so the next step is to find the largest number with max()
     a=max(pali_num.keys())
     print(f'The largest palindrome number is {a} and {a} = {pali_num[a][0]}*{pali_num[a][1]} ')
-    
+
 largest_pali_num()
