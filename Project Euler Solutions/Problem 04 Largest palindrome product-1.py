@@ -13,7 +13,7 @@ def largest_pali_num():
         for y in range(1,1000):
             if len(str(x*y))==6 and str(x*y)[0]==str(x*y)[-1] and str(x*y)[1]==str(x*y)[-2] and str(x*y)[2]==str(x*y)[-3] :
                 pali_num[x*y]=(x,y)
-# Add the multiply value of the two 3-digit numbers to the pali_num dictionary
+# Add the product of the two 3-digit numbers to the pali_num dictionary as keys and two numbers as the values.
 # when the value is a 6 digital number and it meets the definition of a palindromic number
 # Now I have all the palindrome numbers in the keys of the dictionary
 # so the next step is to find the largest number with max()
